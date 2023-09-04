@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="CodeHim">
+    <title>Delight-Boutique</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrap">  
+    <main>
+      <header class="header">
+        <div class="container header__top">
+          <div class="header__logo">
+            <h1 class="header__title">
+              <a href="#"><span class="header__subtitle" style="font-size: 25px; font-weight:700;">Delight-Boutique</span></a>
+            </h1>
+          </div>
+          <a href="about.html" class="second-link">About</a>
+          <a href="sign-up.html" class="third-link">Sign up</a>
+          <div class="header__cart">
+            <ul>
+              <li class="header__submenu" id="submenu">
+                <button class="header__cart-btn" id="toggle-cart-btn"><svg class="cart" width="24" height="24" viewbox="0 0 24 24">
+                <path d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z"></path>
+                </svg> <em style="color: #fff;">Your Cart</em></button>
+                <div id="shopping-cart" class="shopping-cart-container">
+                  <table id="cart-content">
+                    <thead>
+                      <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                  </table>
+                  <p class="total-container" id="total-price"></p>
+                  <a href="#" id="checkout-btn" class="cart-btn">Checkout</a>
+                  <a href="#" id="clear-cart" class="cart-btn">Clear Cart</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__main">
+          <p class="display-title text-light">
+            Find what suits you best!
+          </p>
+        </div>
+        <div class="arrow">
+          <svg width="24" height="24" viewbox = "0 0 24 24">
+            <path d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z"></path>
+          </svg>
+        </div>
+      </header>
+      <main class="container page-content">
+        <h2 class="page-title" style="font-size: 30px; font-weight:700;">SHOP NOW</h2>
+        <div class="grid" id="grid">
+          <div class="card">
+            <img src="img/img1.jpg" class="card__image" alt="" style="height: 72.4%;">
+            <div class="card__info">
+              <h4 class="card__title">Black Designer Shirt</h4>
+              <p class="card__text" style="background-color: #ffa500;">30 units left</p>
+              <p class="card__price">$200</p>
+              <input type="radio" class=" add-to-cart" data-id="6">
+            </div>
+          </div>
+            <!--.card-->
+          <div class="card" >
+            <img src="img/img2.jpg" class="card__image" alt="">
+            <div class="card__info">
+              <h4 class="card__title">Casual Trousers</h4>
+              <p class="card__text" style="background-color: #00ff00;">100 units left</p>
+              <p class="card__price">$100</p>
+              <input type="radio" class=" add-to-cart" data-id="7">
+            </div>
+          </div>
+            <!--.card-->
+          <div class="card">
+            <img src="img/img3.jpg" class="card__image" style="height: 72.4%;">
+            <div class="card__info">
+              <h4 class="card__title">Green Versace Dress</h4>
+              <p class="card__text">2 Units left !</p>
+              <p class="card__price">$150</p>
+              <input type="radio" class=" add-to-cart" data-id="8">
+            </div>
+          </div>
+            <!--.card-->
+          <div class="card">
+            <img src="img/img4.jpg" class="card__image">
+            <div class="card__info">
+              <h4 class="card__title">Swagboy Hat</h4>
+              <p class="card__text" style="background-color: #ffa500;">33 Units left</p>
+              <p class="card__price">$50</p>
+              <input type="radio" class=" add-to-cart" data-id="9">
+            </div>
+          </div>
+          <!--.card-->
+          <div class="card">
+            <img src="img/img5.jpg" alt="" class="card__image">
+            <div class="card__info">
+              <h4 class="card__title">Icy Wrist-watch</h4>
+              <p class="card__text">5 Units left !</p>
+              <p class="card__price">$100</p>
+              <input type="radio" class=" add-to-cart" data-id="10">
+            </div>
+          </div>
+          <!--.card-->
+          <div class="card">
+            <img src="img/img6.jpg" alt="" class="card__image" style="height: 72.4%;">
+            <div class="card__info">
+              <h4 class="card__title">Red-hot Blazer</h4>
+              <p class="card__text" style="background-color: #00ff00;">250 Units left</p>
+              <p class="card__price">$300</p>
+              <input type="radio" class=" add-to-cart" data-id="11">
+            </div>
+          </div>
+            <!--.card-->
+          <div class="card">
+            <img src="img/img7.jpg" alt="" class="card__image" style="height: 72.4%;">
+            <div class="card__info">
+              <h4 class="card__title">Fancy Glasses</h4>
+              <p class="card__text" style="background-color: #ffa500;">49 Units lefts</p>
+              <p class="card__price">$200</p>
+              <input type="radio" class=" add-to-cart" data-id="12">
+            </div>
+          </div>
+            <!--card-->
+          <div class="card">
+            <img src="img/img8.jpg" alt="" class="card__image">
+            <div class="card__info">
+              <h4 class="card__title">Blue Backpack</h4>
+              <p class="card__text" style="background-color: #ffa500;">17 Units left</p>
+              <p class="card__price">$200</p>
+              <input type="radio" class=" add-to-cart" data-id="13">
+            </div>
+          </div>
+            <!--.card-->
+        </div>
+      </main>
+      <footer class="footer">
+        <h5>Thank you for shopping with us</h5>
+      
+        <div class="about-footer">
+          <div style="margin-left: 2%;">
+            <h3>Lets help you</h3>
+            <a href="#">Help center</a><br>
+            <a href="#">How to shop</a><br>
+            <a href="#">Delivery options</a> <br>
+            <a href="#"></a>
+          </div>
+
+          <div style="margin-left: 11%;">
+            <h3>Make money with us</h3>
+            <a href="#">Sell here</a><br>
+            <a href="#">Become a consultant</a><br>
+            <a href="#">Partner with us</a>
+          </div>
+
+          <div style="margin-left: 11%;">
+            <h3>About Delight-Boutique</h3>
+            <a href="about.html">About Us</a><br>
+            <a href="#">Reviews and reports</a><br>
+            <a href="#">Experiences</a>
+          </div>
+
+          <div style="margin-left: 8%;">
+            <h3>Contact us:</h3>
+            <span style="display: flex;">
+              <a href="#"><img src="img/instagram-icon.svg"></a>&nbsp; &nbsp;
+              <a href="#"> <img src="img/twitter-icon.png"></a> &nbsp; &nbsp;
+              <a href="#"><img src="img/facebook-icon.svg"></a> &nbsp; &nbsp;
+              <a href="#" style="opacity: 1;"> <img src="img/youtube-icon.svg"></a> <br> <br>
+            </span>
+            <a href="tel:08055144776">+234 805 514 4776</a><br>
+            <a href="mailto:delight@havilahandhills.com">delight-boutique@gmail.com</a>
+          </div>
+        </div>
+        <div class="hide">
+          <h3>Contact us:</h3>
+          <a href="tel:08055144776">+234 805 514 4776</a><br>
+          <a href="mailto:delight@havilahandhills.com">delight-boutique@gmail.com</a>
+        </div>
+      </footer>  
+        <!-- END EDMO HTML (Happy Coding!)-->
+    </main>
+  </div>
+ 
+  <script  src="./js/script.js"></script>
+</body>
+</html>
